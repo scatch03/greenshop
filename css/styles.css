@@ -1,0 +1,119 @@
+/** General styles **/
+.pointer {
+    cursor: pointer;
+}
+.green {
+    color: #46A358;
+}
+.btn-icon {
+    margin-right: 10px;
+}
+
+/** Registration page styles **/
+.registration__container input[type="text"],
+.registration__container input[type="email"],
+.registration__container input[type="password"] {
+    margin-top: 14px; 
+    width: 100%;
+    height: 40px; 
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    outline: none; 
+}
+.registration__container input[type="submit"] {
+    width: 100%;
+    margin-top: 41px; 
+    background-color: #46A358; 
+    padding: 16px 0; 
+    border: none; 
+    color: #fff; 
+    border-radius: 5px;
+    font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    font-weight: 700;
+}
+.registration__main {
+    background: #000; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.registration__container {
+    width: 500px; 
+    background-color: #fff; 
+    border-bottom: 10px solid #46A358;
+}
+.registration__close {
+    display: flex; 
+    flex-direction: row-reverse; 
+    margin: 13px;
+}
+.registration__title {
+    display: flex; 
+    justify-content: center;
+    margin: 21px 0; 
+    color: #3D3D3D; 
+    font-family: 'Cera Pro', Arial, sans-serif;
+    font-weight: 550;
+    font-size: 18px; 
+}
+.registration__divider {
+    margin: 0 15px; 
+    font-weight: 100;
+    font-size: 14px; 
+    padding-top: 2px;
+}
+.registration__alternative {
+    display: flex;
+    width: 100%; 
+    margin: 36px 0 28px 0; 
+}
+.registration__alternative__text {
+    margin: 0 15px;
+    color:#3D3D3D;
+    font-family: 'Cera Pro', Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+}
+.registration__alternative__line {
+    flex-grow: 1; 
+    border: none; 
+    height: 1px; 
+    background-color: #EAEAEA;
+}
+.registration__form {
+    width: 300px; 
+    margin: 0 auto;
+}
+.registration__form__title {
+    margin-top: 40px;
+    color: #3D3D3D; 
+    font-family: 'Cera Pro', Arial, sans-serif; 
+    font-weight: 200; 
+    font-size: 13px;
+}
+.registration__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    color:#727272;
+    font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500; 
+    padding: 13px 0; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.registration__btn:last-child {
+    margin-bottom: 50px; 
+}
+.registration__password {
+    background: url('../img/hide.png') no-repeat 97% center;
+}
+
