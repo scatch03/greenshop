@@ -1,4 +1,4 @@
-# Project fe_start_hillel
+# Project GreenShop
 Front-end course by Hillel
 Homework & assignments
 
