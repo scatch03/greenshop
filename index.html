@@ -7,11 +7,13 @@
     <link media="all" rel="stylesheet" href="css/styles.css" type="text/css">
     <title>GreenShop</title>
 </head>
-<body>
+<body class="index">
     <div class="index__container">
         <header class="index__header">
-            <img class="index__header__logo" src="img/logo.png" alt="Logo">
-            <nav class="index__header__nav">
+            <a class="index__header__item" href="#">
+                <img class="index__header__logo" src="img/logo.svg" alt="Logo">
+            </a>
+            <nav class="index__header__nav index__header__item">
                 <ul>
                     <li class="index__header__nav__active"><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
@@ -19,13 +21,14 @@
                     <li><a href="#">Blogs</a></li>
                 </ul>
             </nav>
-            <a class="index__btn index__logout" href="#">
-                <img class="btn-icon" src="img/logout.png" alt="Logout">Logout
+            <a class="index__btn index__logout index__header__item" href="#">
+                <img class="btn-icon index__logout__item" src="img/logout.svg" alt="Logout">
+                <span class="index__logout__item">Logout</span>
             </a>
         </header>
         <main>
             <section class="hero">
-                <div class="hero__text">
+                <div class="hero__text hero__item">
                     <p class="hero__text__welcome">Welcome to greenshop</p>
                     <h1>Let's Make a Better <span class="green">Planet</span></h1>
                     <p class="hero__text__offer">
@@ -34,9 +37,8 @@
                     </p>
                     <a class="index__btn index__cta" href="#">Shop now</a>
                 </div>
-                <div class="hero__image">
-                    <img class="hero__image__big" src="img/plant_big.png" alt="Big plant">
-                    <img class="hero__image__small" src="img/plant_small.png" alt="Small plant">
+                <div class="hero__image hero__item">
+                    <img src="img/plant.png" alt="Plant">
                 </div>
             </section>
         </main>

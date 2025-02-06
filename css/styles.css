@@ -84,7 +84,6 @@ ul {
     color:#3D3D3D;
     font-family: 'Cera Pro', Arial, Helvetica, sans-serif; 
     font-size: 14px;
-    font-weight: 400;
 }
 .registration__alternative__line {
     flex-grow: 1; 
@@ -126,18 +125,25 @@ ul {
 }
 
 /** Index page styles **/
+.index {
+    font-family: Cera Pro, Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+}
 .index__container {
     margin: 0 auto;
     max-width: 1200px;
 }
-.index__header * {
+.index__header__item, 
+.index__logout__item,
+.index__header__nav li,
+.hero__item {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .index__header {
-    margin: 30px 0 12px 0;
-    border-bottom: 1px solid #46A35880;
-    font-family: Cera Pro, Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
     font-size: 0;
 }
 .index__btn {
@@ -151,14 +157,11 @@ ul {
     width: 110px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
     padding: 8px;
 }
 .index__cta {
-    margin: 45px 0 85px 0;
-    font-size: 16px;
+    margin-top: 45px;
     font-weight: 700;
-    line-height: 20px;
     text-transform: uppercase;
 }
 .index__header__logo {
@@ -166,9 +169,8 @@ ul {
 }
 .index__header__nav {
     width: calc(100% - 260px);
-    font-size: 16px;
-    font-weight: 400;
     text-align: center;
+    font-size: 16px;
 }
 .index__header__nav ul {
     margin: 0;
@@ -179,35 +181,28 @@ ul {
 }
 .index__header__nav a {
     color: #3D3D3D;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
 }
 .index__header__nav__active {
     border-bottom: 3px solid #46A358;
 }
 .index__header__nav__active a {
-    font-weight: bold;
+    font-weight: 600;
     color: #000;
 }
 .hero {
     background-color: #f5f5f5;
-    font-family: Cera Pro, Arial, Helvetica, sans-serif;
     font-size: 0;
 }
-.hero__text{
-    vertical-align: top;
-    padding: 68px 0 0 43px;
+.hero__text {
     width: 55%;
-}
-.hero__text, .hero__image {
-    display: inline-block;
+    font-size: 16px;
+    padding-left: 45px;
 }
 .hero__text__welcome {
     margin: 0 0 7px 0;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -215,20 +210,12 @@ ul {
     margin: 0;
     font-size: 70px;
     font-weight: 900;
-    line-height: 70px;
+    line-height: 1;
 }
 .hero__text__offer {
     color: #727272;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
 }
 .hero__image {
-    position: relative;
     width: 45%;
-}
-.hero__image__small {
-    position: absolute;
-    bottom: 16px;
-    left: 50px;
 }
