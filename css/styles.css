@@ -1,4 +1,7 @@
 /** General styles **/
+* {
+    box-sizing: border-box;
+}
 .pointer {
     cursor: pointer;
 }
@@ -7,6 +10,12 @@
 }
 .btn-icon {
     margin-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
 }
 
 /** Registration page styles **/
@@ -18,7 +27,6 @@
     height: 40px; 
     border: 1px solid #EAEAEA;
     border-radius: 5px;
-    box-sizing: border-box;
     padding-left: 15px;
     outline: none; 
 }
@@ -76,7 +84,6 @@
     color:#3D3D3D;
     font-family: 'Cera Pro', Arial, Helvetica, sans-serif; 
     font-size: 14px;
-    font-weight: 400;
 }
 .registration__alternative__line {
     flex-grow: 1; 
@@ -117,3 +124,98 @@
     background: url('../img/hide.png') no-repeat 97% center;
 }
 
+/** Index page styles **/
+.index {
+    font-family: Cera Pro, Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+}
+.index__container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.index__header__item, 
+.index__logout__item,
+.index__header__nav li,
+.hero__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.index__header {
+    padding-top: 30px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+    font-size: 0;
+}
+.index__btn {
+    background-color: #46A358;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.index__logout {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+}
+.index__cta {
+    margin-top: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.index__header__logo {
+    width: 150px;
+}
+.index__header__nav {
+    width: calc(100% - 260px);
+    text-align: center;
+    font-size: 16px;
+}
+.index__header__nav ul {
+    margin: 0;
+}
+.index__header__nav li {
+    margin: 0 25px;
+    padding: 10px 0 20px 0;
+}
+.index__header__nav a {
+    color: #3D3D3D;
+}
+.index__header__nav__active {
+    border-bottom: 3px solid #46A358;
+}
+.index__header__nav__active a {
+    font-weight: 600;
+    color: #000;
+}
+.hero {
+    background-color: #f5f5f5;
+    font-size: 0;
+}
+.hero__text {
+    width: 55%;
+    font-size: 16px;
+    padding-left: 45px;
+}
+.hero__text__welcome {
+    margin: 0 0 7px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.hero__text h1 {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1;
+}
+.hero__text__offer {
+    color: #727272;
+    font-size: 14px;
+}
+.hero__image {
+    width: 45%;
+}
