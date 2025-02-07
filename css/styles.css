@@ -160,7 +160,7 @@ ul {
     background: url('../img/hide.png') no-repeat 97% center;
 }
 
-/** Index page styles **/
+/** Navigation & hero unit styles **/
 .index__container {
     margin: 0 auto;
     max-width: 1200px;
@@ -256,6 +256,7 @@ ul {
     width: 45%;
 }
 
+/** Offer grid styles **/
 .offer {
     position: relative;
     overflow: hidden;
@@ -297,8 +298,7 @@ ul {
 .offer__filter__categories .active a,
 .offer__filter__categories a:hover,
 .offer__results__control .active a,
-.offer__results__control a:hover
- {
+.offer__results__control a:hover {
     font-weight: 700;
     color: #46A358;
 }
