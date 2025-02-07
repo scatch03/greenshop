@@ -1,6 +1,6 @@
 # Project GreenShop
 Front-end course by Hillel
-Homework & assignments
+Homework & Assignments
 
 ## Added external styles & css reset
 ## Added navigation and hero unit
