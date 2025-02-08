@@ -214,6 +214,9 @@ ul {
 .index__header__nav a {
     color: #3D3D3D;
 }
+.index__header__nav a:hover {
+    color: #000;
+}
 .index__header__nav__active {
     border-bottom: 3px solid #46A358;
 }
@@ -258,23 +261,16 @@ ul {
 
 /** Offer grid styles **/
 .offer {
-    position: relative;
-    overflow: hidden;
-    min-height: 900px; 
     margin-bottom: 12px;
 }
 .offer__aside {
     float: left;
     width: 30%;
     background-color: #FBFBFB;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    margin-right: 50px;
+    padding: 14px 0 0 18px;
 }
 .offer__filter {
-    padding: 14px 0 0 18px;
+    padding-bottom: 100px;
 }
 .offer__filter__title {
     margin: 14px 0 10px 0;
@@ -296,16 +292,17 @@ ul {
     color: #3D3D3D;
 }
 .offer__filter__categories .active a,
-.offer__filter__categories a:hover,
-.offer__results__control .active a,
-.offer__results__control a:hover {
+.offer__results__control .active a {
     font-weight: 700;
     color: #46A358;
 }
+.offer__filter__categories a:hover,
+.offer__results__control a:hover {
+    color: #46A358;
+}
 .offer__sale {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    width: 30%;
+    float: left;
 }
 .offer__results__control {
     color: #3D3D3D;
@@ -324,8 +321,7 @@ ul {
     margin-right: 37px;
     padding-bottom: 7px;
 }
-.offer__results__control ul li.active,
-.offer__results__control ul li:hover {
+.offer__results__control ul li.active {
     border-bottom: 2px solid #46A358;
 }
 .offer__results__control a {
