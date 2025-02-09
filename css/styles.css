@@ -2,6 +2,16 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
 .pointer {
     cursor: pointer;
 }
@@ -9,13 +19,44 @@
     color: #46A358;
 }
 .btn-icon {
-    margin-right: 10px;
+    margin-right: 8px;
 }
-a {
-    text-decoration: none;
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
 }
-ul {
-    list-style-type: none;
+
+/** Fonts **/
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
 }
 
 /** Registration page styles **/
@@ -38,7 +79,6 @@ ul {
     border: none; 
     color: #fff; 
     border-radius: 5px;
-    font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
     font-size: 16px; 
     font-weight: 700;
 }
@@ -64,7 +104,6 @@ ul {
     justify-content: center;
     margin: 21px 0; 
     color: #3D3D3D; 
-    font-family: 'Cera Pro', Arial, sans-serif;
     font-weight: 550;
     font-size: 18px; 
 }
@@ -82,7 +121,6 @@ ul {
 .registration__alternative__text {
     margin: 0 15px;
     color:#3D3D3D;
-    font-family: 'Cera Pro', Arial, Helvetica, sans-serif; 
     font-size: 14px;
 }
 .registration__alternative__line {
@@ -98,7 +136,6 @@ ul {
 .registration__form__title {
     margin-top: 40px;
     color: #3D3D3D; 
-    font-family: 'Cera Pro', Arial, sans-serif; 
     font-weight: 200; 
     font-size: 13px;
 }
@@ -110,7 +147,6 @@ ul {
     border: 1px solid #EAEAEA;
     background-color: #fff;
     color:#727272;
-    font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 500; 
     padding: 13px 0; 
@@ -124,11 +160,7 @@ ul {
     background: url('../img/hide.png') no-repeat 97% center;
 }
 
-/** Index page styles **/
-.index {
-    font-family: Cera Pro, Arial, Helvetica, sans-serif;
-    line-height: 1.25;
-}
+/** Navigation & hero unit styles **/
 .index__container {
     margin: 0 auto;
     max-width: 1200px;
@@ -160,7 +192,7 @@ ul {
     padding: 8px;
 }
 .index__cta {
-    margin-top: 45px;
+    margin-top: 35px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -177,10 +209,13 @@ ul {
 }
 .index__header__nav li {
     margin: 0 25px;
-    padding: 10px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 .index__header__nav a {
     color: #3D3D3D;
+}
+.index__header__nav a:hover {
+    color: #000;
 }
 .index__header__nav__active {
     border-bottom: 3px solid #46A358;
@@ -192,11 +227,12 @@ ul {
 .hero {
     background-color: #f5f5f5;
     font-size: 0;
+    margin-bottom: 12px;
 }
 .hero__text {
     width: 55%;
     font-size: 16px;
-    padding-left: 45px;
+    padding: 0 0 45px 45px;
 }
 .hero__text__welcome {
     margin: 0 0 7px 0;
@@ -205,17 +241,168 @@ ul {
     line-height: 1.15;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    color: #3D3D3D;
 }
 .hero__text h1 {
     margin: 0;
     font-size: 70px;
     font-weight: 900;
     line-height: 1;
+    text-transform: uppercase;
 }
 .hero__text__offer {
     color: #727272;
     font-size: 14px;
+    line-height: 1.75;
 }
 .hero__image {
     width: 45%;
 }
+
+/** Offer grid styles **/
+.offer {
+    margin-bottom: 12px;
+}
+.offer__aside {
+    float: left;
+    width: 30%;
+    background-color: #FBFBFB;
+    padding: 14px 0 0 18px;
+}
+.offer__filter {
+    padding-bottom: 100px;
+}
+.offer__filter__title {
+    margin: 14px 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.9;
+}
+.offer__filter__categories {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2.5;
+}
+.offer__results {
+    float: right;
+    width: calc(70% - 30px);
+}
+.offer__filter__categories a,
+.offer__filter__title {
+    color: #3D3D3D;
+}
+.offer__filter__categories .active a,
+.offer__results__control .active a {
+    font-weight: 700;
+    color: #46A358;
+}
+.offer__filter__categories a:hover,
+.offer__results__control a:hover {
+    color: #46A358;
+}
+.offer__sale {
+    width: 30%;
+    float: left;
+}
+.offer__results__control {
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.offer__results__control ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.offer__results__control ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 37px;
+    padding-bottom: 7px;
+}
+.offer__results__control ul li.active {
+    border-bottom: 2px solid #46A358;
+}
+.offer__results__control a {
+    color: #3D3D3D;
+}
+.offer__results__sort {
+    float: right;
+}
+.offer__results__sort > select {
+    border: none;
+    outline: none;
+}
+.offer__results__grid {
+    text-align: center;
+}
+.offer__item {
+    display: inline-block;
+    padding-top: 30px;
+    background: #FBFBFB;
+}
+.offer__item:nth-child(n+4) {
+    margin-top: 70px;
+}
+.offer__item:nth-child(3n+1){
+    float: left;
+}
+.offer__item:nth-child(3n+3){
+    float: right;
+}
+.offer__item__text {
+    font-size: 16px;
+    line-height: 1;
+    color: #3D3D3D; 
+    background-color: #fff; 
+    padding: 12px 0 0 2px;
+    margin: 0;
+    text-align: left;
+}
+.offer__item__price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #46A358;
+}
+.offer__item__price::before{
+    content: '$';
+}
+.offer__paging {
+    margin-top: 90px;
+    float: right;
+}
+.offer__paging li {
+    display: inline-block;
+}
+.offer__paging li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    line-height: 35px;
+    color: #3D3D3D;
+    margin-left: 10px;
+}
+.offer__paging li:first-child a {
+    margin-left: 0;
+}
+.offer__paging li a img {
+    vertical-align: middle;
+}
+.offer__paging li.active a,
+.offer__paging li a:hover {
+    color: #fff;
+    font-weight: 700;
+    background-color: #46A358;
+}
+
+
+
+
