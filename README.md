@@ -5,3 +5,4 @@ Homework & Assignments
 ## Added external styles & css reset
 ## Added navigation and hero unit
 ## Added offers grid
+## Added promo & blog sections
