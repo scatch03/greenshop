@@ -1,5 +1,17 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Document
    ========================================================================== */
 
