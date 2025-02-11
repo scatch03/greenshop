@@ -6,3 +6,4 @@ Homework & Assignments
 ## Added navigation and hero unit
 ## Added offers grid
 ## Added promo & blog sections
+## Added action icons and discount badge to product cards
