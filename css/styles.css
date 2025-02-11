@@ -358,9 +358,57 @@ ul {
     text-align: center;
 }
 .offer__item {
+    border-top: 1px solid #FBFBFB;
     display: inline-block;
     padding-top: 30px;
     background: #FBFBFB;
+}
+.offer__item__image { 
+    padding-bottom: 40px;
+    position: relative;
+}
+.offer__item__discount {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -13px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    background-color: #46A358;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+.offer__item:hover {
+    border-top: 1px solid #46A358;
+}
+.offer__item a:hover path {
+    fill: #46A358;
+}
+.offer__item__actions {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+}
+.offer__item:hover .offer__item__actions {
+    display: flex;
+}
+.offer__item__actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border-radius: 4px;
 }
 .offer__item:nth-child(n+4) {
     margin-top: 70px;
