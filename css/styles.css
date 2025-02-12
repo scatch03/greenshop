@@ -1,10 +1,9 @@
 /** General styles **/
-* {
-    box-sizing: border-box;
-}
 body {
     font-family: 'Cera Pro', Arial, Helvetica, sans-serif;
     line-height: 1.25;
+    font-size: 14px;
+    color: #727272;
 }
 a {
     text-decoration: none;
@@ -123,7 +122,6 @@ ul {
 .registration__divider {
     margin: 0 15px; 
     font-weight: 100;
-    font-size: 14px; 
     padding-top: 2px;
 }
 .registration__alternative {
@@ -134,7 +132,6 @@ ul {
 .registration__alternative__text {
     margin: 0 15px;
     color:#3D3D3D;
-    font-size: 14px;
 }
 .registration__alternative__line {
     flex-grow: 1; 
@@ -160,7 +157,6 @@ ul {
     border: 1px solid #EAEAEA;
     background-color: #fff;
     color:#727272;
-    font-size: 14px;
     font-weight: 500; 
     padding: 13px 0; 
     border-radius: 5px;
@@ -220,7 +216,7 @@ ul {
     column-gap: 50px;
 }
 .index__header__nav li {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
 .index__header__nav a {
     color: #3D3D3D;
@@ -240,7 +236,6 @@ ul {
     align-items: center;
     justify-content: space-between;
     background-color: #f5f5f5;
-    font-size: 0;
     margin-bottom: 12px;
 }
 .hero__text {
@@ -250,7 +245,6 @@ ul {
 }
 .hero__text__welcome {
     margin: 0 0 7px 0;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.1em;
@@ -259,14 +253,13 @@ ul {
 }
 .hero__text h1 {
     margin: 0;
+    color: #3D3D3D;
     font-size: 70px;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
 }
 .hero__text__offer {
-    color: #727272;
-    font-size: 14px;
     line-height: 1.75;
 }
 .hero__image {
@@ -279,7 +272,8 @@ ul {
     margin-bottom: 12px;
 }
 .offer h2 {
-    display: none;
+    position: absolute;
+    left: -9999px;
 }
 .offer__container {
     display: flex;
@@ -295,7 +289,7 @@ ul {
 }
 .offer__results {
     flex-basis: 70%;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 .offer__filter {
     padding-left: 18px;
@@ -325,15 +319,17 @@ ul {
     color: #46A358;
 }
 .offer__results__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #3D3D3D;
     font-size: 15px;
     line-height: 1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .offer__results__control ul {
     margin: 0;
     padding: 0;
-    float: left;
 }
 .offer__results__control ul li {
     display: inline-block;
@@ -346,9 +342,6 @@ ul {
 }
 .offer__results__control a {
     color: #3D3D3D;
-}
-.offer__results__sort {
-    float: right;
 }
 .offer__results__sort > select {
     border: none;
@@ -508,9 +501,7 @@ ul {
 }
 .promo__item__text p {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.9;
-    color: #727272;
     margin: 0 0 25px 0;
 }
 .promo__item__more {
@@ -520,7 +511,6 @@ ul {
     padding: 10px 30px;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.5;
 }
 .promo__item__more:hover {
@@ -532,9 +522,7 @@ ul {
 .blog {
     margin-bottom: 12px;
     text-align: center;
-    font-size: 14px;
     line-height: 1.9;
-    color: #727272;
 }
 .blog h2 {
     font-weight: 700;
@@ -569,7 +557,6 @@ ul {
 }
 .blog__post__info {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.1;
     color: #46A358;
     margin: 0 0 10px 0;
@@ -589,13 +576,10 @@ ul {
 }
 .blog__post__descr {
     margin: 0 0 10px 0;
-    font-size: 14px;
     line-height: 1.65;
-    color: #727272;
 }
 .blog__more {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     color: #3D3D3D;
     display: flex;
