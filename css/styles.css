@@ -619,7 +619,6 @@ li.active > a {
 .index__header__submenu2 {
     left: 100%;
     top: 0%;
-    padding: 0;
     margin-left: 1px;
 }
 li:hover > .index__header__submenu,
@@ -633,7 +632,6 @@ li:hover > .index__header__submenu2 {
     background-color: #EDF6EE;
     padding: 10px 15px;
     margin: 0;
-    position: relative;
 }
 .index__header__submenu li:has(ul)::after {
     content: '\276F';
