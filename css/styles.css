@@ -207,7 +207,7 @@ ul {
 .index__header__nav {
     font-size: 16px;
 }
-.index__header__nav ul {
+.index__header__nav > ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -215,19 +215,24 @@ ul {
     justify-content: space-between;
     column-gap: 50px;
 }
-.index__header__nav li {
+.index__header__nav > ul > li {
     padding: 20px 0;
+    border-bottom: 3px solid #fff;
+    position: relative;
 }
-.index__header__nav a {
-    color: #3D3D3D;
-}
-.index__header__nav a:hover {
-    color: #000;
-}
-.index__header__nav__active {
+.index__header__nav > ul > li:hover {
     border-bottom: 3px solid #46A358;
 }
-.index__header__nav__active a {
+.index__header__nav > ul > li > a {
+    color: #3D3D3D;
+}
+.index__header__nav > ul > li > a:hover {
+    color: #000;
+}
+.index__header__nav li.active {
+    border-bottom: 3px solid #46A358;
+}
+li.active > a {
     font-weight: 600;
     color: #000;
 }
@@ -598,6 +603,57 @@ ul {
     display: inline-block;
 }
 
+/** Dropdown menu styles **/
+.index__header__submenu,
+.index__header__submenu2 {
+    display: none;
+    position: absolute;
+    width: 185px;
+    padding: 16px 0 0 0;
+}
+.index__header__submenu {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%); 
+}
+.index__header__submenu2 {
+    left: 100%;
+    top: 0%;
+    margin-left: 1px;
+}
+li:hover > .index__header__submenu,
+li:hover > .index__header__submenu2 {
+    display: block;
+}
+.index__header__submenu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDF6EE;
+    padding: 10px 15px;
+    margin: 0;
+}
+.index__header__submenu li:has(ul)::after {
+    content: '\276F';
+}
+.index__header__submenu li:has(ul):hover::after {
+    content: '\276F';
+    transform: rotate(180deg);
+}
+.index__header__submenu li:hover {
+    color: #fff;
+    background-color: #1A712A;
+}
+.index__header__submenu li a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #3D3D3D;
+    text-transform: capitalize;
+}
+.index__header__submenu li:hover > a {
+    color: #fff;
+    font-weight: 700;
+}
 
 
 
