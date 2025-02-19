@@ -8,3 +8,4 @@ Homework & Assignments
 ## Added promo & blog sections
 ## Added action icons and discount badge to product cards
 ## Added dropdown menu
+## Added footer
