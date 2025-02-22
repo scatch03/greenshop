@@ -897,7 +897,6 @@ address.contact:hover svg {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
- 
     column-gap: 10px;
 }
 .resources__media li {
@@ -907,10 +906,19 @@ address.contact:hover svg {
     flex-grow: 0;
     flex-shrink: 0;
     border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+}
+.resources__media li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 7px;
     height: 30px;
     width: 30px;
-    border-radius: 4px;
+    transition: all .2s;
+}
+.resources__media li a:hover {
+    transform: scale(1.1);
 }
 .copyright {
     padding: 5px;
@@ -933,7 +941,6 @@ address.contact:hover svg {
     font-style: normal;
     font-display: block;
   }
-  
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -948,7 +955,6 @@ address.contact:hover svg {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
   .icon-login:before {
     content: "\e901";
   }
