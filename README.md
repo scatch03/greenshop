@@ -10,3 +10,4 @@ Homework & Assignments
 ## Added dropdown menu
 ## Added footer
 ## Moved icons to sprite
+## Added "Burger" menu & preloader
