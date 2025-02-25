@@ -9,3 +9,4 @@ Homework & Assignments
 ## Added action icons and discount badge to product cards
 ## Added dropdown menu
 ## Added footer
+## Moved icons to sprite
