@@ -1090,7 +1090,7 @@ address.contact:hover svg {
     overflow: hidden;
     border-radius: 50%;
     transform-origin: top left;
-    animation: spin 5s linear infinite, bounce 5s linear infinite alternate;
+    animation: spin 5s linear infinite, bounce 2.5s linear infinite alternate;
 }
 .spinner__first {
     width: 100px;
