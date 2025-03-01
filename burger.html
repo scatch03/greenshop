@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link media="all" rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link media="all" rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Animation & Burger Menu</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="spinner">
+            <div class="spinner__first"></div>
+            <div class="spinner__second"></div>
+          </div>
+    </div>
+
+    <label class="toggle-menu">
+        <input class="toggler" type="checkbox">
+        <div class="burger">
+          <span></span>
+        </div>
+      </label>
+      <ul class="drawer-menu">
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Campaigns</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Clients</a></li>
+      </ul>
+<script>
+    setTimeout(function(){
+        document.body.classList.add('loaded');
+    }, 20000);
+</script>      
+</body>
+</html>
