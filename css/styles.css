@@ -371,11 +371,16 @@ li.active > a {
     outline: none;
 }
 .offer__results__grid {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px; 
 }
 .offer__item {
     border-top: 1px solid #FBFBFB;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-top: 30px;
     background: #FBFBFB;
     transition: all 0.3s;
@@ -436,15 +441,6 @@ li.active > a {
     width: 35px;
     background: #fff;
     border-radius: 4px;
-}
-.offer__item:nth-child(n+4) {
-    margin-top: 70px;
-}
-.offer__item:nth-child(3n+1){
-    float: left;
-}
-.offer__item:nth-child(3n+3){
-    float: right;
 }
 .offer__item__text {
     font-size: 16px;
@@ -983,7 +979,7 @@ address.contact:hover svg {
     width: 30px;
     height: 30px;
     z-index: 2;
-    background: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, .94);
 }
 .toggler {
     position: absolute;
@@ -1182,6 +1178,18 @@ address.contact:hover svg {
     .newsletter {
         text-align: center;
     }
+    .offer__results__grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .offer__results__control {
+        flex-direction: column;
+    }
+    .offer__results__sort {
+        margin-top: 20px;
+    }
+    .offer__filter__categories {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 726px) {
     body {
@@ -1225,6 +1233,21 @@ address.contact:hover svg {
     .index__header__submenu2 li {
         background: #d0e2d3;
     }
+    .offer__results__grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .offer__results__grid {
+        padding-right: 10px;
+    }
+    .offer__results {
+        padding-left: 10px;
+    }
+    .offer__item {
+        align-items: center;
+    }
+    .offer__item__text {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 625px) {
     body {
@@ -1247,6 +1270,21 @@ address.contact:hover svg {
     }
     .resources__list {
         text-align: center;
+    }
+    .offer__container {
+        flex-direction: column;
+    }
+    .offer__aside {
+        margin-bottom: 15px;
+    }
+    .offer__filter {
+        text-align: center;
+    }
+    .offer__filter__categories {
+        padding-left: 0;
+    }
+    .offer__filter__categories {
+        font-size: 17px;
     }
 }
 
