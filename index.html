@@ -13,6 +13,36 @@
             <a href="#">
                 <img class="index__header__logo" src="img/logo.svg" alt="Logo">
             </a>
+            <label class="toggle-menu">
+                <input class="toggler" type="checkbox">
+                <div class="burger">
+                  <span></span>
+                </div>
+            </label>
+            <ul class="drawer-menu">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li>
+                    <a href="#">Plant Care</a>
+                    <ul class="index__header__submenu">
+                        <li><a href="#">Drainage</a></li>
+                        <li><a href="#">Fungicides</a></li>
+                        <li><a href="#">Fertilizer</a></li>
+                        <li>
+                            <a href="#">Priming</a>
+                            <ul class="index__header__submenu2">
+                                <li><a href="#">Universal</a></li>
+                                <li><a href="#">For Ficus</a></li>
+                                <li><a href="#">For Cacti</a></li>
+                                <li><a href="#">For Citrus</a></li>
+                                <li><a href="#">For those in bloom</a></li>
+                                <li><a href="#">For Orchids</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Blogs</a></li>
+            </ul>
             <nav class="index__header__nav">
                 <ul>
                     <li class="active"><a href="#">Home</a></li>
@@ -39,16 +69,10 @@
                     <li><a href="#">Blogs</a></li>
                 </ul>
             </nav>
-            <div class="btn-group">
-                <!-- Temporary button -->
-                <a class="index__btn index__login" href="burger.html">
-                    <span>Burger</span>
-                </a>
-                <a class="index__btn index__login" href="registration.html">
-                    <span class="icon-login btn-icon"></span>
-                    <span>Login</span>
-                </a>
-            </div>
+            <a class="index__btn index__login" href="registration.html">
+                <span class="icon-login btn-icon"></span>
+                <span>Login</span>
+            </a>
         </header>
         <main>
             <section class="hero">
@@ -83,7 +107,7 @@
                                 <li><a href="#">Accessories</a></li>
                             </ul>
                         </div>
-                        <img src="img/sale.png" alt="Sale banner">
+                        <img class="offer__ad" src="img/sale.png" alt="Sale banner">
                     </aside>
                     <div class="offer__results">
                         <div class="offer__results__control">
@@ -496,7 +520,7 @@
                 </div>
             </div>
             <div class="contacts">
-                <a href="#">
+                <a class="contacts__logo" href="#">
                     <img class="contact" src="img/logo.svg" alt="Logo">
                 </a>
                 <address class="contact">
