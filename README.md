@@ -11,3 +11,4 @@ Homework & Assignments
 ## Added footer
 ## Moved icons to sprite
 ## Added "Burger" menu & preloader
+## Added responsiveness
