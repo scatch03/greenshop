@@ -174,6 +174,10 @@ ul {
 .index__container {
     margin: 0 auto;
     max-width: 1200px;
+    min-width: 375px;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 .index__header {
     padding-top: 30px;
@@ -331,7 +335,6 @@ li.active > a {
 .offer__filter__categories .active a,
 .offer__results__control .active a,
 .offer__filter__categories a:hover {
-    font-weight: 700;
     color: #46A358;
 }
 .offer__filter__categories a:hover,
@@ -516,7 +519,7 @@ li.active > a {
     flex-basis: 40%;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: 500px;
+    min-width: 375px;
 }
 .promo__item__img {
     margin-top: -40px;
@@ -570,6 +573,7 @@ li.active > a {
 }
 .blog > p {
     margin-bottom: 35px;
+    line-height: 1.25;
 }
 .blog__posts {
     display: flex;
@@ -581,10 +585,9 @@ li.active > a {
 .blog__post {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     flex-basis: 20%;
     flex-grow: 1;
-    min-width: 250px;
+    /* min-width: 250px; */
     max-width: 310px;
 }
 .blog__post__text {
@@ -979,14 +982,14 @@ address.contact:hover svg {
     width: 30px;
     height: 30px;
     z-index: 2;
-    background: rgba(255, 255, 255, .94);
+    background: transparent;
 }
 .toggler {
     position: absolute;
     left: -9999px;
 }
 .toggler:checked + .burger {
-    background: rgba(237, 246, 238);
+    background: transparent;
 }
 .toggler:checked + .burger span {
     left: 100%;
@@ -1075,7 +1078,6 @@ address.contact:hover svg {
 .loaded .overlay {
     display: none;
 }
-
 .spinner {
     width: 100px;
     height: 100px;
@@ -1137,28 +1139,41 @@ address.contact:hover svg {
 @media screen and (max-width: 1011px) {
     .newsletter {
         padding: 30px 5px 5px 10px;
-        min-width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
     }
-}
-@media screen and (max-width: 840px) {
-    body {
-        font-size: 16px;
-    }
-    .blog__posts{
-        justify-content: space-around;
+    .service {
+        flex-basis: 30%;
     }
 }
 @media screen and (max-width: 1000px){
+    .contact {
+        padding: 15px 23px;
+    }
+    .contact.mail {
+        padding: 5px 23px;
+    }
     .contact.phone {
         justify-content: center;
     }
 }
 @media screen and (max-width: 900px) {
+    .blog__posts{
+        justify-content: space-evenly;
+    }
+    .blog__post {
+        flex-basis: 45%;
+    }
     .resources {
         justify-content: space-evenly;
+        text-align: center;
     }
     .resources__list {
         margin-top: 25px;
+    }
+    .resources__list.extended {
+        min-width: 100%;
     }
     .resources__media,
     .resources__payments {
@@ -1169,20 +1184,12 @@ address.contact:hover svg {
     .contacts {
         flex-direction: column;
     }
-    .contact.phone {
-        justify-content: flex-start;
-    }
-    .contacts__logo {
-        display: none;
-    }
-    .newsletter {
-        text-align: center;
-    }
     .offer__results__grid {
         grid-template-columns: repeat(2, 1fr); 
     }
     .offer__results__control {
         flex-direction: column;
+        align-items: flex-start;
     }
     .offer__results__sort {
         margin-top: 20px;
@@ -1190,16 +1197,25 @@ address.contact:hover svg {
     .offer__filter__categories {
         font-size: 16px;
     }
+    .hero__text h1 {
+        font-size: 60px;
+    }
 }
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 840px) {
     body {
-        font-size: 17px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 725px) {
+    body {
+        font-size: 16px;
     }
     .services {
         flex-direction: column;
     }
     .service {
         margin-top: 25px;
+        padding: 0px 10px 10px 140px;
     }
     .index__header__nav,
     .index__login {
@@ -1233,12 +1249,6 @@ address.contact:hover svg {
     .index__header__submenu2 li {
         background: #d0e2d3;
     }
-    .offer__results__grid {
-        grid-template-columns: repeat(1, 1fr); 
-    }
-    .offer__results__grid {
-        padding-right: 10px;
-    }
     .offer__results {
         padding-left: 10px;
     }
@@ -1252,14 +1262,14 @@ address.contact:hover svg {
         width: 40px;
         height: 40px;
     }
+    .hero__text h1 {
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 625px) {
     .resources__media li a {
         width: 50px;
         height: 50px;
-    }
-    body {
-        font-size: 18px;
     }
     .hero__image {
         display: none;
@@ -1272,13 +1282,7 @@ address.contact:hover svg {
     .offer__ad {
         display: none;
     }
-    .resources {
-        flex-direction: column;
-        align-items: center;
-    }
-    .resources__list {
-        text-align: center;
-    }
+    
     .offer__container {
         flex-direction: column;
     }
@@ -1286,13 +1290,46 @@ address.contact:hover svg {
         margin-bottom: 15px;
     }
     .offer__filter {
-        text-align: center;
-    }
-    .offer__filter__categories {
         padding-left: 0;
     }
     .offer__filter__categories {
+        padding-left: 0;
         font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+        padding: 5px 10px;
+    }
+    .offer__filter__title {
+        text-align: center;
+        padding-left: 10px;
+    }
+    .hero__text h1 {
+        font-size: 40px;
+    }
+    .promo__item {
+        flex-direction: column;
+    }
+    .promo__item__text {
+        padding: 5px;
+        text-align: center;
+    }
+    .promo__item__img {
+        margin: -40px auto 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .offer__results__grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .offer__results__grid {
+        padding-right: 10px;
+    }
+    .resources {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
