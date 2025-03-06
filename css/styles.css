@@ -464,7 +464,8 @@ li.active > a {
     content: '$';
 }
 .offer__paging {
-    margin-top: 90px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     float: right;
 }
 .offer__paging li {
@@ -574,6 +575,7 @@ li.active > a {
 .blog > p {
     margin-bottom: 35px;
     line-height: 1.25;
+    padding: 0 20px;
 }
 .blog__posts {
     display: flex;
@@ -587,7 +589,6 @@ li.active > a {
     flex-direction: column;
     flex-basis: 20%;
     flex-grow: 1;
-    /* min-width: 250px; */
     max-width: 310px;
 }
 .blog__post__text {
@@ -1146,6 +1147,9 @@ address.contact:hover svg {
     .service {
         flex-basis: 30%;
     }
+    .blog__posts{
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 1000px){
     .contact {
@@ -1159,8 +1163,12 @@ address.contact:hover svg {
     }
 }
 @media screen and (max-width: 900px) {
+    body {
+        font-size: 13px;
+    }
     .blog__posts{
         justify-content: space-evenly;
+        gap: 10px;
     }
     .blog__post {
         flex-basis: 45%;
@@ -1200,15 +1208,14 @@ address.contact:hover svg {
     .hero__text h1 {
         font-size: 60px;
     }
-}
-@media screen and (max-width: 840px) {
-    body {
-        font-size: 15px;
+    .offer__paging {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
 @media screen and (max-width: 725px) {
     body {
-        font-size: 16px;
+        font-size: 12px;
     }
     .services {
         flex-direction: column;
@@ -1257,6 +1264,10 @@ address.contact:hover svg {
     }
     .offer__item__text {
         width: 100%;
+    }
+    .offer__paging {
+        margin-top: 20px;
+        margin-bottom: 45px;
     }
     .resources__media li a {
         width: 40px;
@@ -1318,6 +1329,14 @@ address.contact:hover svg {
     }
     .promo__item__img {
         margin: -40px auto 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .blog__post {
+        flex-basis: 100%;
+    }
+    body {
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 400px) {
